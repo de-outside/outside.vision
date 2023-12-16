@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Outside Vision</title>
-    <style>
-       body {
-  font-family: Helvetica;
-}
-    </style>
+    <title>OUTSIDE.VISION</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <style>
+        body {
+    background: url(https://mobirise.com/engine/data/upload/2019/02/code-editor-color.jpg);
+    background-attachment: fixed;
+    margin: 0px;
+    font-family: 'Helvetica', sans-serif;
+}
+   /* I had this idea of see through element. The solution was provided by https://stackoverflow.com/questions/16987203/turning-a-div-into-transparent-to-see-through-two-containers */
+    .holder {
+        background: #ffffff;
+        padding: 10%;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: url(https://mobirise.com/engine/data/upload/2019/02/code-editor-color.jpg);
+        background-attachment: fixed;
+    }
+    </style>
 </head>
 
 <body>
-        <p style="font-size: 24px;" align="center"><b>OUTSIDE</b> SOON</p>
-       
+
+    <div class="holder">
+        
+        <div class="circle">
+            <h1 style="padding-left: 120px;padding-top: 35px;margin-top: 0px;">
+                OUTSIDE<span style="font-weight: 400;">.VISION</span>
+            </h1>
+        </div>
+        <form style="padding-top:50px;" method="post" action="https://outside.ecomailapp.cz/public/subscribe/1/43c2cd496486bcc27217c3e790fb4088">
+            <label for="jmeno">JMÉNO</label>
+            <input type="text" name="name" class="input-field">
+            <label for="prijmeni">PŘÍJMENÍ</label>
+            <input type="text" name="surname" class="input-field">
+            <label for="email">E-MAIL</label>
+            <input type="text" name="email" class="input-field"></br />
+            <input class="button" type="submit" value="PŘIHLÁSIT ODBĚR NEWSLETTERU"><br/>
+            <p style="font-size: 10px;">Přihlášením souhlasíte se zpracováním osobních údajů</p>
+        </form>
+        <div style="padding-top: 100px">
+            <p>
+                <span style="margin-right: 20px;"><a href="podrobnosti.html">Podrobnosti</a></span>
+                <span style="margin-right: 20px;"><a href="kontakt.html">Kontakt</a></span>
+                <span style="margin-right: 20px;"><a href="udaje.html">Ochrana osobních údajů</a></span><br/>
+            </p>
+        </div>
+    </div>
 </body>
+
 </html>
