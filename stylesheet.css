@@ -39,6 +39,7 @@ body {
         border: none;
         margin: 20px 0px;
         cursor: pointer;
+        border-radius: 0px;
     }
 
     a {
