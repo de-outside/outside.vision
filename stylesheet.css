@@ -6,13 +6,6 @@ body {
 }
   
 
-    
-    @media only screen and (max-width: 600px) {
-        .holder {
-            padding: 25px;
-        }
-    }
-
     p {
         font-size: 16px;
     }
@@ -34,6 +27,7 @@ body {
         border-color: #000000;
         border-style: solid;
         font-family: 'Helvetica', sans-serif;
+        border-radius: 0px;
     }
 
     .button {
@@ -49,4 +43,50 @@ body {
 
     a {
         color: #000000;
+    }
+
+    .column {
+        float: left;
+        margin-right: 20px;
+      }
+      
+      .left, .right {
+        width: 25%;
+      }
+      
+      .middle {
+        width: 50%;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .row {
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 5% 10% 30% 10%;
+        height: 50vh;
+        line-height:1.5;
+      }
+    
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
+      
+      .body {
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 0 10% 0 10%;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .body {
+            padding: 10% 10% 10% 10%;
+        }
     }
