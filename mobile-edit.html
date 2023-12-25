@@ -7,21 +7,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-   body {
-    background: url('background.jpg');
-    position: fixed;
-    height: 100%;
+  body {
+  margin: 0px;
+  font-family: 'Helvetica', sans-serif;
 }
-div {
-  width: 200px;
-  height: 250px;
-  margin: 1em auto;
-  background: radial-gradient(circle at center 75px, transparent, transparent 50px, #ffffff 50px);
+
+.content {
+  position: absolute;
+  width: 100%;
+
+} 
+
+.body {
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 0 10% 0 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .body {
+    padding: 10% 10% 10% 10%;
+  }
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+a {
+  color: #000000;
+}
+
+.background {
+  background: url('https://outside.vision/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  background: radial-gradient(circle at center 50px, transparent, transparent 50px, #ffffff 50px);
   overflow: hidden;
   position: absolute;
+  padding: 10px;
+  }
+
+label {
+  display: block;
+  font-weight: bold;
+  padding: 20px 0px 5px 0px;
+  font-size: 18px;
 }
+
+.input-field {
+  width: 200px;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  font-family: 'Helvetica', sans-serif;
+  border-radius: 0px;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+/* Bottom menu */
+.column {
+  float: left;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.left,
+.right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 5% 10% 30% 10%;
+  height: 50vh;
+  line-height: 1.5;
+}
+
+/* Bottom menu end*/
       </style>
       <body>
-        <div></div>
-
+    <div class="background"></div>
+        <div class="content">
+            <div class="circle">
+            </div>
+            <div style="background-color: #ffffff; margin: 0px 0px 0px 120px;padding: 22px;">
+            
+            
+            <h1>
+                    OUTSIDE<span style="font-weight: 400;">.VISION</span>
+                </h1>
+                </div>
+        <div class="body">
+            <form method="post" action="https://outside.ecomailapp.cz/public/subscribe/1/43c2cd496486bcc27217c3e790fb4088">
+                <label for="jmeno" style="padding-top: 0px;">
+                    JMÉNO
+                </label>
+                <input type="text" name="name" class="input-field">
+                <label for="prijmeni">
+                    PŘÍJMENÍ
+                </label>
+                <input type="text" name="surname" class="input-field">
+                <label for="email">
+                    E-MAIL
+                </label>
+                <input type="text" name="email" class="input-field"></br />
+                <input class="button" type="submit" value="PŘIHLÁSIT ODBĚR NEWSLETTERU"><br />
+                <p style="font-size: 10px; margin: 0px;">
+                    Přihlášením souhlasíte se zpracováním osobních údajů
+                </p>
+            </form>
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="podrobnosti.html">
+                    Podrobnosti
+                </a>
+            </div>
+            <div class="column">
+                <a href="kontakt.html">
+                    Kontakt
+                </a>
+            </div>
+            <div class="column">
+                <a href="ochrana-osobnich-udaju.html">
+                    Ochrana osobních údajů
+                </a><br />
+            </div>
+        </div>
+    </div>
+    </body>
+    
+    </html>
       </body>
