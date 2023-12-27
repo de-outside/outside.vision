@@ -146,4 +146,20 @@ label {
   }
 }
 
+.row-short {
+  background-color: #ffffff;
+  margin: -1px;
+  padding: 0px 150px 75px 150px;
+  height: 50vh;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .row-short {
+    padding: 0px 50px;
+    height: 100vh;
+
+  }
+}
+
 /* Bottom menu end */
