@@ -71,6 +71,7 @@ a {
   background-color: #ffffff;
   margin: 0px 0px 0px 100px;
   padding: 22px;
+  translate: no;
 }
 
 .title a {
@@ -105,7 +106,7 @@ label {
   border-radius: 0px;
 }
 
-/* Bottom menu */
+/* Menu */
 .column {
   float: left;
   margin-right: 20px;
@@ -137,17 +138,36 @@ label {
   background-color: #ffffff;
   margin: -1px;
   padding: 0px 150px 75px 150px;
-  height: 50vh;
   line-height: 1.5;
 }
 
 @media only screen and (max-width: 600px) {
   .menu {
-    padding: 0px 50px;
+    padding: 0px 50px 25px 50px;
   }
 }
 
 .menu-short {
+  background-color: #ffffff;
+  margin: -1px;
+  height: 50vh;
+  padding: 0px 150px 75px 150px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-short {
+    padding: 0px 50px;
+    height: 100vh;
+  }
+}
+
+/* Menu end */
+
+/* Bottom */
+
+/* Clear floats after the columns */
+.bottom {
   background-color: #ffffff;
   margin: -1px;
   padding: 0px 150px 75px 150px;
@@ -156,11 +176,24 @@ label {
 }
 
 @media only screen and (max-width: 600px) {
-  .menu-short {
+  .bottom {
     padding: 0px 50px;
-    height: 100vh;
-
   }
 }
 
-/* Bottom menu end */
+.bottom-short {
+  background-color: #ffffff;
+  margin: -1px;
+  padding: 0px 150px 75px 150px;
+  height: 50vh;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottom-short {
+    padding: 0px 50px;
+    height: 100vh;
+  }
+}
+
+/* Bottom end */
